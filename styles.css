@@ -1,0 +1,142 @@
+/* Estiliza o corpo da página */
+body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 100vh;           /* Preenche toda a altura da viewport */
+    margin: 0;
+    background: linear-gradient(135deg, #000000, #ff0400); /* Gradiente de fundo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;            /* Cor padrão do texto */
+}
+
+/* Container que envolve o cartão e o formulário */
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px; /* Espaço entre o cartão e o formulário */
+}
+
+/* Estilo do cartão de crédito */
+.credit-card {
+    width: 320px;           /* Largura do cartão */
+    height: 190px;          /* Altura do cartão */
+    perspective: 1000px;   /* Perspectiva para efeitos 3D */
+}
+
+/* Estilo da frente do cartão de crédito */
+.card-front {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;   /* Bordas arredondadas */
+    background: linear-gradient(135deg, #000000, #000000); /* Gradiente de fundo */
+    color: white;          /* Cor do texto */
+    padding: 20px;         /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: space-between; /* Espaça os elementos verticalmente */
+    position: relative;    /* Permite o uso de posicionamento absoluto para o logo */
+    border: 2px solid white; /* Borda branca */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do cartão */
+}
+
+/* Estilo do nome do titular do cartão */
+.card-holder {
+    font-size: 13px;       /* Tamanho da fonte */
+    margin-bottom: 20px;   /* Espaço abaixo do nome do titular */
+    color: white;          /* Cor do texto */
+}
+
+/* Estilo do número do cartão */
+.card-number {
+    font-size: 20px;       /* Tamanho da fonte */
+    letter-spacing: 1px;   /* Espaçamento entre letras */
+    margin-bottom: 20px;    /* Espaço abaixo do número do cartão */
+    color: white;          /* Cor do texto */
+}
+
+/* Estilo da data de validade e CVC */
+.card-expiry-cvc {
+    display: flex;         /* Flexbox para alinhamento horizontal */
+    justify-content: space-between; /* Espaça os itens horizontalmente */
+    position: absolute;    /* Posiciona o contêiner de forma absoluta */
+    bottom: 20px;          /* Distância ajustada da parte inferior do cartão */
+    width: calc(100% - 40px); /* Largura total do cartão menos padding */
+    left: 20px;            /* Distância ajustada da borda esquerda do cartão */
+}
+
+/* Estilo da data de validade */
+.card-expiry {
+    font-size: 12px;       /* Tamanho da fonte */
+    color: white;          /* Cor do texto */
+}
+
+/* Estilo do CVC */
+.card-cvc {
+    font-size: 12px;       /* Tamanho da fonte */
+    color: white;          /* Cor do texto */
+}
+
+/* Estilo do logotipo do cartão */
+.card-logo {
+    height: 40px;          /* Altura do logotipo */
+    width: 60px;           /* Largura do logotipo */
+    background-size: contain; /* Ajusta o tamanho da imagem para caber no contêiner */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    position: absolute;    /* Permite o posicionamento absoluto */
+    bottom: 8px;           /* Distância da parte inferior do cartão */
+    right: 20px;           /* Distância da parte direita do cartão */
+}
+
+/* Estilo do formulário */
+.card-form {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    gap: 20px;              /* Espaço entre os campos do formulário */
+    background: rgb(0, 0, 0); /* Fundo preto */
+    padding: 20px;         /* Espaçamento interno */
+    border-radius: 10px;   /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do formulário */
+    border: 2px solid rgb(255, 0, 0); /* Borda vermelha */
+    color: white;          /* Cor do texto */
+}
+
+/* Estilo dos grupos de formulários */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Organiza os campos em coluna */
+}
+
+/* Estilo dos rótulos dos campos do formulário */
+label {
+    margin-bottom: 5px;    /* Espaço abaixo dos rótulos */
+    font-weight: bold;     /* Negrito */
+    color: white;          /* Cor do texto */
+}
+
+/* Estilo dos campos de entrada */
+input {
+    padding: 10px;         /* Espaçamento interno */
+    border: 1px solid #ff0000; /* Borda vermelha */
+    border-radius: 5px;    /* Bordas arredondadas */
+    background-color: #000000; /* Fundo preto */
+    color: white;          /* Cor do texto */
+}
+
+/* Estilo do botão */
+button {
+    padding: 10px;         /* Espaçamento interno */
+    background: linear-gradient(135deg, #000000, #ff0000); /* Gradiente de fundo */
+    color: white;          /* Cor do texto */
+    border: none;          /* Remove a borda padrão */
+    border-radius: 5px;    /* Bordas arredondadas */
+    cursor: pointer;       /* Muda o cursor para indicar clicável */
+    font-size: 16px;       /* Tamanho da fonte */
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+    background: #008cff;   /* Fundo azul claro ao passar o mouse */
+}
