@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Cartão de Crédito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="credit-card">
+            <div class="card-front">
+                <div class="card-logo" id="card-logo"></div>
+                <div class="card-number">#### #### #### ####</div>
+                <div class="card-holder">
+                    <div class="holder-name">NOME COMPLETO</div>
+                </div>
+                <div class="card-expiry">
+                    <div class="expiry-date">MM/AA</div>
+                </div>
+                <div class="card-cvc">
+                    <div class="cvc-number">###</div>
+                </div>
+            </div>
+        </div>
+        <form class="card-form">
+            <h2>Registro de Cartão de Crédito</h2>
+            <div class="form-group">
+                <label for="card-number">Número do Cartão</label>
+                <input type="text" id="card-number" maxlength="19" placeholder="Numero do cartao sem espacos">
+            </div>
+            <div class="form-group">
+                <label for="card-holder">Nome do Titular</label>
+                <input type="text" id="card-holder" placeholder="Nome Completo">
+            </div>
+            <div class="form-group">
+                <label for="card-expiry">Data de Validade</label>
+                <input type="text" id="card-expiry" maxlength="5" placeholder="MM/AA">
+            </div>
+            <div class="form-group">
+                <label for="card-cvc">CVC</label>
+                <input type="text" id="card-cvc" maxlength="3" placeholder="CVC">
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
